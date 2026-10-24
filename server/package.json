@@ -1,0 +1,22 @@
+{
+  "name": "readrx-server",
+  "version": "1.0.0",
+  "description": "ReadRx 后端：转发 DeepSeek 请求（药品识别、相克查询）",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "mock": "node src/index.js --mock"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "openai": "^7.42.0"
+  }
+}
